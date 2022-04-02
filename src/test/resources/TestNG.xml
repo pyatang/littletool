@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="TestNG Listener Example">
+
+
+    <test name="Spring JMS Test" preserve-order="true">
+        <classes>
+            <class name="org.lytang.littletool.Producer"/>
+            <class name="org.lytang.littletool.Consumer"/>
+        </classes>
+    </test>
+
+
+</suite>
