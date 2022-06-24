@@ -22,11 +22,6 @@ public class Consumer {
     /**
      * jmsOperations 的 receiveAndConvert() 方法
      */
-    @Test
-    public void receiveAndConvert(){
-        Map<String, Object> map = (Map) jmsOperations.receiveAndConvert("new.queue");
-    }
-
 
 
 }

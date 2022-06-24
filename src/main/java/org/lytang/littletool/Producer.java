@@ -25,14 +25,6 @@ public class Producer implements CommandLineRunner {
     @Autowired
     private JmsOperations jmsOperations;
 
-    @Test
-    public void convertAndSend() {
-        Map<String, String> map = new HashMap<>();
-        map.put("111", "a");
-        map.put("222", "b");
-        map.put("333", "c");
-        this.jmsOperations.convertAndSend("new.queue",map);
-    }
 
     @Override
     public void run(String ... args) throws Exception {
